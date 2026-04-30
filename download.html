@@ -3,25 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zara Assistant - Download</title>
+  <title>Chronos Assistant - Download</title>
+  <meta name="description" content="Landing page for D3F4U17's Devspace">
+  <meta name="keywords" content="Landing page, Israel Prosper, D3F4U17, Devspace">
+  <meta name="Author" content="D3F4U17">
+  <meta og:description="Landing page for D3F4U17's Devspace">
+  <link rel="icon" type="image/ico" href="images/dev-icon.ico">
+  <script src="https://kit.fontawesome.com/1dedf583a5.js" crossorigin="anonymous"></script>
+  <script src="Js/index.js" defer></script>
   <link rel="stylesheet" href="css/download.css">
 </head>
 <body>
 
   <!-- HERO -->
   <header class="hero">
+    <nav class="navbar">
+      <a href="index.html" class="d-link">Home</a>
+      <a href="about-me.html" class="d-link">About The Dev</a>
+      <a href="blog.html" class="d-link">Blog</a>
+      <a href="privacy.html" class="d-link">Privacy Policy</a>
+    </nav>
+    <input id="menu" type="checkbox">
+        <label class="menu" for="menu">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+        </label>
+    <div class="navbar-mobile">
+        <a href="index.html" class="index m-link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+        <a href="about-me.html" class="index m-link"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;About Me</a>
+        <a href="privacy.html" class="create m-link"><i class="fa-solid fa-paperclip"></i> &nbsp;&nbsp;Privacy</a>
+        <a href="blog.html" class="blog m-link"><i class="fa-solid fa-blog"></i></i>&nbsp;&nbsp; Blog</a>
+    </div>
     <h1>Chronos Assistant</h1>
     <p>Your smart desktop assistant for faster workflows</p>
     
-    <a href="Downloads/Chronos.rar" class="download-btn" download>
-      Download for Windows
+    <a href="https://github.com/l5r431/chronos-assistant/releases" class="download-btn">
+      <i class="fa-solid fa-download"></i> Download for Windows
     </a>
 
-    <p class="file-info">Version 1.0 • .RAR • Windows 10/11</p>
+    <p class="file-info">Version 1.0 • .RAR | .EXE • Windows 10/11</p>
+    <p class="file-info">The Availble Wak Word Command is <b>Computer</b></p>
   </header>
 
   <!-- FEATURES -->
   <section class="features container">
+    <h1 class="my-head">If You Know a Little bit of Programming, You Can Change the Commands and Targets</h1>
     <h2>What Chronos Can Do</h2>
 
     <div class="grid">
@@ -49,7 +76,7 @@
 
   <!-- INSTALLATION -->
   <section class="install container">
-    <h2>How to Install</h2>
+    <h2>How To Install</h2>
     <ol>
       <li>Download the .rar file</li>
       <li>Extract using WinRAR or 7-Zip</li>
@@ -58,6 +85,64 @@
     </ol>
   </section>
 
+  <!--how to use-->
+  <section class="use container">
+    <h2>Available Chronos Commands</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Command</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power Off</td>
+            <td>Powers Off PC</td>
+          </tr>
+          <tr>
+            <td>Restart</td>
+            <td>Restarts PC</td>
+          </tr>
+          <tr>
+            <td>Exit, Stop, Quit, Close</td>
+            <td>Powers Off Assistant</td>
+          </tr>
+          <tr>
+            <td>Open Chrome</td>
+            <td>Chrome</td>
+          </tr>
+          <tr>
+            <td>Developer</td>
+            <td>VS Code</td>
+          </tr>
+          <tr>
+            <td>Open / Launch Music</td>
+            <td>Spotify</td>
+          </tr>
+          <tr>
+            <td>Open Chat</td>
+            <td>ChatGPT</td>
+          </tr>
+          <tr>
+            <td>Open Brave</td>
+            <td>Brave</td>
+          </tr>
+          <tr>
+            <td>Open Video</td>
+            <td>VLC</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!--ADDITTIONAL INFORMATION-->
+  <section class="additional container">
+    <h2> Additional Information</h2>
+    <p>The Available Commands are fixed and <b>NOT</b> Dynamic, Wait for Another Release to get Additional Dynamic and Replacable Commands.</p>
+  </section>
   <!-- REQUIREMENTS -->
   <section class="requirements container">
     <h2>System Requirements</h2>
