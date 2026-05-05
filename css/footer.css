@@ -35,6 +35,7 @@
     position: absolute;
     background: white;
     padding: .4rem .7rem;
+    font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
     border: none;
     border-radius: 15px;
     text-decoration: none;

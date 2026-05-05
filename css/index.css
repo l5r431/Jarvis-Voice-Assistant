@@ -330,6 +330,7 @@ main {
     content: attr(data-social);
     position: absolute;
     background: white;
+    font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
     padding: .2rem .6rem;
     border: none;
     border-radius: 15px;
