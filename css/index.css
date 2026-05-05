@@ -157,6 +157,8 @@ main {
     align-items: center;
     padding: 1rem;
     z-index: 5;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter:blur(20px);
 }
 .my-logo {
     text-decoration: none;
