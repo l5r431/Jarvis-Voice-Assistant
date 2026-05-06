@@ -148,7 +148,7 @@ ul {
     align-items: center;
     box-shadow: var(--shadow);
     border: 2px solid var(--card-border);
-    border-radius: 0 20px 20px 20px;
+    border-radius: 20px;
     background: var(--card-lg);
     transition: transform .4s ease, box-shadow .4s ease;
 }
@@ -197,8 +197,8 @@ ul {
 .img-wrapper {
     overflow: hidden;
     width: 100%;
-    height: 120px;
-    border-radius: 0px 20px 0 0;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
     transition: border-radius .6s ease;
 }
 
