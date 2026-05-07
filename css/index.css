@@ -12,7 +12,7 @@
 }
 body {
     background: var(--dark);
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
     flex-direction: column;
@@ -93,6 +93,7 @@ body {
     opacity: 0;
     height: fit-content;
     width: min(300px, 80vw);
+    background: black;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -103,8 +104,6 @@ body {
 .navbar-mobile.active { 
     opacity: 1;
     right: 0;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter:blur(20px);
 }
 .m-link {
     color: white;
@@ -152,9 +151,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    z-index: 5;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    z-index: 10;
 }
 .my-logo {
     text-decoration: none;
@@ -290,6 +287,7 @@ body {
 }
 #particles-js {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
