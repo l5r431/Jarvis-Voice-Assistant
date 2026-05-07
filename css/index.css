@@ -25,14 +25,14 @@ body {
 /* Container */
 .menu {
     width: 30px;
-    height: 25px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3px;
     cursor: pointer;
     position: absolute;
-    top: .8rem;
+    top: 1rem;
     right: 1rem;
     z-index: 999;
     display: none;
@@ -80,11 +80,6 @@ body {
 /* Click feel */
 .menu:active {
     transform: scale(0.9);
-}
-@media(max-width:740px) {
-    .menu {
-        display: flex;
-    }
 }
 .navbar-mobile {
     position: fixed;
@@ -167,11 +162,11 @@ body {
     text-decoration: none;
     color: var(--white);
     font-weight: 900;
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-family: Segoe UI, sans-serif;
 }
 .log {
-    font-size: clamp(1rem, 2vw, 1rem);
+    font-size: clamp(10px, 1vw, .9rem);
     font-weight: 500;
     color: var(--white);
     font-family: 'Courier New', Courier, monospace;
@@ -380,6 +375,47 @@ body {
 .fa-brands, .fa-solid {
     font-size: clamp(16px, 1.5vw, 1.5rem);
 }
+@media(max-width:1135px) {
+    .d-link {
+        font-size: .9rem;
+        margin: 0 .7rem;
+    }
+}
+@media(max-width:930px) {
+    .d-link {
+        font-size: .9rem;
+    }
+}
+@media(max-width:740px) {
+    .menu {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+    }
+}
+@media(max-width:520px) {
+    .hero {
+        margin: 0;
+        padding: .5rem;
+    }
+}
+@media(max-width:600px) {
+    .menu {
+        width: 20px;
+        height: 15px;
+        top: 1rem;
+        right: 1rem;
+    }
+    #menu:checked + .menu #bar1 {
+        transform: translateY(5px) rotate(45deg);
+        width: 20px;
+    }
+    #menu:checked + .menu #bar3 {
+        transform: translateY(-7px) rotate(-45deg);
+        width: 20px;
+    }
+}
 @media(max-width:430px) {
     .fa-brands, .fa-solid {
         font-size: .9rem;
@@ -391,6 +427,7 @@ body {
        padding: .3rem;
        border-radius: 50%;
     }
+    
 }
 @media(max-width:385px) {
     .fa-brands, .fa-solid {
@@ -405,22 +442,4 @@ body {
     border-radius: 50%;
     }
 }
-@media(max-width:930px) {
-    .d-link {
-        font-size: .9rem;
-    }
-    .link {
-        display: none;
-    }
-}
-@media(max-width:520px) {
-    .hero {
-    margin: 0;
-    padding: .5rem;
-}
-}
-@media(max-width:740px) {
-    .navbar {
-        display: none;
-    }
-}
+
