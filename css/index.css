@@ -15,11 +15,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    display: flex;
     flex-direction: column;
-}
-main {
-    flex: 1;
 }
 /* Hide checkbox */
 #menu {
@@ -305,7 +301,6 @@ main {
     flex-direction: column;
     align-items: center;
     z-index: 5;
-   margin-top: auto;
 }
 .footer-icons {
     display: flex;
