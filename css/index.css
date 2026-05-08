@@ -81,7 +81,7 @@ body {
 
 .navbar-mobile {
     position: fixed;
-    top: 3.5rem;
+    top: 0;
     right: -100vw;
     opacity: 0;
     width: min(280px, 88vw);
@@ -97,7 +97,7 @@ body {
 }
 .navbar-mobile.active {
     opacity: 1;
-    right: 0.75rem;
+    right: 0.30rem;
 }
 
 /* Header row inside the dropdown */
