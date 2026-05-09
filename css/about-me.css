@@ -317,15 +317,15 @@ main {
 
 /* Container */
 .menu {
-    width: 25px;
-    height: 15px;
+    width: 20px;
+    height: 13px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3px;
     cursor: pointer;
     position: absolute;
-    top: .5rem;
+    top: .6rem;
     right: .5rem;
     z-index: 999;
     display: none;
@@ -336,7 +336,7 @@ main {
 }
 /* Bars */
 .bars {
-    height: 5px;
+    height: 4px;
     width: 100%;
     background: var(--text-main);
     border-radius: 5px;
@@ -354,8 +354,8 @@ main {
 
 /* Top */
 #menu:checked + .menu #bar1 {
-    transform: translateY(3px) rotate(45deg);
-    width: 25px;
+    transform: translateY(1px) rotate(45deg);
+    width: 20px;
 }
 
 /* Middle */
@@ -367,7 +367,7 @@ main {
 /* Bottom */
 #menu:checked + .menu #bar3 {
     transform: translateY(-10px) rotate(-45deg);
-    width: 25px;
+    width: 20px;
 }
 
 /* Click feel */
