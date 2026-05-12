@@ -4,16 +4,8 @@
     const menu = document.querySelector('.menu');
     const navbar = document.querySelector('.navbar-mobile');
 
-    // =========================
-    // THEME SETUP
-    // =========================
-
     const savedTheme = localStorage.getItem('theme');
-
-    // system preference
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    // apply theme on load
     if (savedTheme === 'light') {
         document.body.classList.add('light-mode');
         mode.checked = true;

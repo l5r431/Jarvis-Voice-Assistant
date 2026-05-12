@@ -543,6 +543,9 @@
     flex-shrink: 0;
     margin-top: 1px;
   }
+  .hamburger {
+    display: none;
+  }
 
   /* ═══════════════════════════════════════════
      RESPONSIVE — all breakpoints
@@ -569,13 +572,14 @@
 
   /* ── Tablet portrait (≤768px) ── */
   @media (max-width: 768px) {
-    /* Nav: hide links, show hamburger */
-    .nav-links { display: none; }
+    .nav-links { 
+      display: none;
+    }
     .nav-links.open {
       display: flex;
       flex-direction: column;
       position: fixed;
-      top: 56px; left: 0; right: 0;
+      top: 3rem; left: 0; right: 0;
       background: rgba(6,8,16,0.97);
       backdrop-filter: blur(16px);
       padding: 20px 24px 28px;
