@@ -30,7 +30,7 @@
           0 0 10px rgba(255, 255, 255, 0.05);
     --card-bg: #0f172a;
     --card-border: #2b2b2b;
-    --card-lg: linear-gradient(18deg, black, rgb(80, 43, 68));
+    --card-lg: linear-gradient(45deg, rgb(24, 22, 22), rgb(11, 4, 4));
     --link: #191d21;
 
     /* Effects */
@@ -57,7 +57,7 @@
     /* Cards */
     --card-bg: #ffffff;
     --card-border: #e5e7eb;
-    --card-lg: linear-gradient(18deg, rgb(255, 255, 255), rgb(80, 43, 68));
+    --card-lg: linear-gradient(45deg, rgb(230, 230, 230), rgb(207, 205, 205));
 
     /* Effects */
     --hover-bg: rgba(0, 0, 0, 0.05);

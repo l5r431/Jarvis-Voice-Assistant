@@ -175,9 +175,8 @@ ul {
     position: absolute;
     inset: -2px;
     border: 2px solid var(--card-border);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background: linear-gradient(90deg, #432c59, #4d2b6d, rgb(45, 117, 117));
+    border-radius: 20px;
+    background: linear-gradient(90deg, #7c7780, #636363, rgb(60, 83, 83));
     opacity: 0;
     z-index: -1;
     transition: opacity .4s ease;
@@ -203,7 +202,7 @@ ul {
 }
 
 .p-card:hover .img-wrapper {
-    border-radius: 20px 20px 40px 40px;
+    border-radius: 10px 10px 20px 20px;
 }
 .p-card .c-head,
 .p-card .p-des,
