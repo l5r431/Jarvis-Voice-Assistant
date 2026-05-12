@@ -6,101 +6,125 @@
     <meta name="description" content="Landing page for Chronos Assistant">
     <meta name="keywords" content="Landing page, Israel Prosper, D3F4U17, Devspace">
     <meta name="Author" content="D3F4U17">
-    <meta og:description="Landing page for Chronos Assistant">
     <link rel="icon" type="image/ico" href="images/edited.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/1dedf583a5.js" crossorigin="anonymous"></script>
-    <title>Landing Page | CHRONOS ASSISTANT</title>
-    <script src="Js/index.js"></script>
+    <title>CHRONOS — D3F4U17's Assistant</title>
+    <script src="Js/index.js" defer></script>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <script src="Js/particles.js"></script>
+    <script src="Js/app.js"></script>
 
-    <header class="header">
-        <a href="#" class="my-logo">
-            <span class="logo">D3F4U17's </span>
-            <span class="log"><i>Assistant</i></span>
-        </a>
+    <div class="page">
 
-        <input id="menu" type="checkbox">
-        <label class="menu" for="menu">
-            <div id="bar1" class="bars"></div>
-            <div id="bar2" class="bars"></div>
-            <div id="bar3" class="bars"></div>
-        </label>
-        <div class="navbar">
-            <a href="about-me.html" class="d-link">About Me</a>
-            <a href="download.html" class="d-link">Download</a>
-            <a href="blog.html" class="d-link">Blog</a>
-            <a href="privacy.html" class="d-link">Privacy</a>
-        </div>
-        <nav class="navbar">
-            <a href="about-me.html" class="link">GET STARTED</a>
-        </nav>
-        <div class="navbar-mobile">
-    <div class="nav-mobile-header">
-        <span class="nav-mobile-label">Menu</span>
-    </div>
-    <div class="nav-mobile-links">
-        <a href="about-me.html" class="m-link">
-            <span class="m-link-icon"><i class="fa-regular fa-user"></i></span>
-            About Me
-            <span class="m-link-arrow">›</span>
-        </a>
-        <a href="download.html" class="m-link">
-            <span class="m-link-icon"><i class="fa-solid fa-download"></i></span>
-            Download Assistant
-            <span class="m-link-arrow">›</span>
-        </a>
-        <a href="privacy.html" class="m-link">
-            <span class="m-link-icon"><i class="fa-solid fa-paperclip"></i></span>
-            Privacy Policy
-            <span class="m-link-arrow">›</span>
-        </a>
-        <a href="blog.html" class="m-link">
-            <span class="m-link-icon"><i class="fa-solid fa-blog"></i></span>
-            Blog
-            <span class="m-link-arrow">›</span>
-        </a>
-    </div>
-    <div class="nav-mobile-footer">
-        <a href="about-me.html" class="nav-mobile-cta">Get Started →</a>
-    </div>
-</div>
-    </header>
+        <header>
+            <a href="#" class="logo-wrap">
+                <span class="logo-mark">D3F4U17<span>.</span></span>
+                <span class="logo-sub">Assistant</span>
+            </a>
 
-    <main>
-        <!-- Particles sit absolute behind everything in .hero-content -->
-        <div id="particles-js"></div>
-        <script src="Js/particles.js"></script>
-        <script src="Js/app.js"></script>
+            <input id="menu-toggle" type="checkbox">
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
 
-        <div class="hero-content">
-            <!-- TEXT: z-index 0, behind particles -->
-            <div class="hero-text">
-                <h1 id="heading">WELCOME TO D3F4U17's PORTIFOLIO.</h1>
-                <p class="hero-meta">I furthermore Welcome you to my Website &amp; Portifolio where Ideas are turned to <br>
-                    <code class="high">Functional</code>, <code class="high">Creative</code>, and <span class="high"><code>Clean Code</code></span>.
-                </p>
-                <p class="dev">Regards From: <span class="bolden">D3F4U17 | @l5r431</span></p>
+            <!-- Mobile nav -->
+            <nav class="nav-mobile">
+                <a href="about-me.html"><i class="fa-regular fa-user"></i> About Me</a>
+                <a href="download.html"><i class="fa-solid fa-download"></i> Download</a>
+                <a href="blog.html"><i class="fa-solid fa-blog"></i> Blog</a>
+                <a href="privacy.html"><i class="fa-solid fa-paperclip"></i> Privacy</a>
+                <div class="nav-mobile-footer">
+                    <a href="about-me.html">GET STARTED →</a>
+                </div>
+            </nav>
+
+            <!-- Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="about-me.html">About Me</a>
+                <a href="download.html">Download</a>
+                <a href="blog.html">Blog</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="about-me.html" class="btn-cta">Get Started →</a>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <main>
+            <div class="glow-orb"></div>
+
+            <!-- Status badge -->
+            <div class="tag">
+                <span class="dot"></span>
+                Chronos v.1.1.6 — Now Live
             </div>
 
-            <!-- IMAGE: z-index 2, above particles -->
-            <img src="images/devs/devi.png" class="img-isr" alt="Israels Image modified by AI">
-        </div>
-    </main>
+            <!-- Avatar -->
+            <div class="avatar-ring">
+                <img
+                    src="images/devs/devi.png"
+                    alt="D3F4U17"
+                    id="avatar-img"
+                    onerror="this.classList.add('hidden'); document.getElementById('avatar-fb').classList.remove('hidden');"
+                >
+                <div class="avatar-fallback hidden" id="avatar-fb">D</div>
+            </div>
 
-    <footer class="footer">
-        <div class="footer-icons">
-            <a data-social="Github"    href="https://github.com/l5r431"         style="--accent-color:#000000;" target="_blank" class="footer-link"><i class="fa-brands fa-square-github"></i></a>
-            <a data-social="Dribble"   href="https://dribbble.com/l5r431"       style="--accent-color:#ff0000;" target="_blank" class="footer-link"><i class="fa-brands fa-dribbble"></i></a>
-            <a data-social="BlueSky"   href="https://l5r431.bsky.social"        style="--accent-color:#00c8ff;" target="_blank" class="footer-link"><i class="fa-brands fa-bluesky"></i></a>
-            <a data-social="Instagram" href="https://instagram.com/l5r431"      style="--accent-color:#ff0040;" target="_blank" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
-            <a data-social="Discord"   href="https://discord.com/users/l5r431"  style="--accent-color:#324dfa;" target="_blank" class="footer-link"><i class="fa-brands fa-discord"></i></a>
-            <a data-social="E-Mail"    href="mailto:iprosper188@gmail.com"       style="--accent-color:#000000;"                class="footer-link"><i class="fa-solid fa-envelope"></i></a>
-            <a data-social="Telegram"  href="https://t.me/l5r431"               style="--accent-color:#006aff;" target="_blank" class="footer-link"><i class="fa-brands fa-telegram"></i></a>
-            <a data-social="TikTok"    href="https://tiktok.com/@l5r431"        style="--accent-color:#000000;" target="_blank" class="footer-link"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </footer>
+            <!-- Heading -->
+            <h1 class="hero-heading">
+                Meet <span class="accent-word">Chronos</span>
+            </h1>
+
+            <!-- Sub -->
+            <p class="hero-sub">
+                A Windows voice assistant built with <code>Vosk</code>, <code>Edge-TTS</code> &amp; <code>Windows APIs</code>.
+                Commands executed. Responses voiced. Ideas shipped.
+            </p>
+
+            <!-- Actions -->
+            <div class="hero-actions">
+                <a href="download.html" class="btn-primary">Download Assistant</a>
+                <a href="about-me.html" class="btn-outline">About the Dev</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="stat-strip">
+                <div class="stat-item">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Offline TTS</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">Windows</span>
+                    <span class="stat-label">Native APIs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">TTS</span>
+                    <span class="stat-label">Edge Neural</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-left">
+                Built by <span>D3F4U17</span> · l5r431 · <span>0.3476° N, 32.5825° E</span>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/l5r431" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/l5r431" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="privacy.html" title="Privacy"><i class="fa-solid fa-shield-halved"></i></a>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 </html>
