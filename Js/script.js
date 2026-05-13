@@ -7,17 +7,17 @@
     const savedTheme = localStorage.getItem('theme');
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (savedTheme === 'light') {
-        document.body.classList.add('light-mode');
+        document.body.classList.add('dark-mode');
         mode.checked = true;
     } 
     else if (savedTheme === 'dark') {
-        document.body.classList.remove('light-mode');
+        document.body.classList.remove('dark-mode');
         mode.checked = false;
     } 
     else {
         // no saved theme → use system
         if (!systemDark) {
-            document.body.classList.add('light-mode');
+            document.body.classList.add('dark-mode');
             mode.checked = true;
         }
     }
@@ -28,10 +28,10 @@
     if (mode) {
         mode.addEventListener('change', () => {
             if (mode.checked) {
-                document.body.classList.add('light-mode');
+                document.body.classList.add('dark-mode');
                 localStorage.setItem('theme', 'light');
             } else {
-                document.body.classList.remove('light-mode');
+                document.body.classList.remove('dark-mode');
                 localStorage.setItem('theme', 'dark');
             }
         });
