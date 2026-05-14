@@ -280,7 +280,7 @@
               <div class="check-icon">✓</div>
               <div class="check-item-text">
                 <h4>Begin listening immediately</h4>
-                <p>The microphone is activated and Vosk starts processing audio. No wake word is needed by default — Chronos is always ready.</p>
+                <p>The microphone is activated and Vosk starts processing audio. The wake word is needed by default — Chronos will not be always listening because all words can trigger an Open App command.</p>
               </div>
             </div>
             <div class="check-item">
@@ -364,24 +364,24 @@
             <td>Searches installed apps via Windows APIs</td>
           </tr>
           <tr>
-            <td><span class="cmd-phrase">what time is it</span></td>
+            <td><span class="cmd-phrase">what time is it "Upcoming"</span></td>
             <td>Speaks the current time</td>
             <td>Uses system clock, no internet needed</td>
           </tr>
           <tr>
-            <td><span class="cmd-phrase">what's today's date</span></td>
+            <td><span class="cmd-phrase">what's today's date "Upcoming"</span></td>
             <td>Speaks the current date</td>
             <td>Same as startup greeting date</td>
           </tr>
           <tr>
-            <td><span class="cmd-phrase">reset / clear</span></td>
-            <td>Soft purge — clears short-term context</td>
-            <td>Does not delete the TTS cache</td>
+            <td><span class="cmd-phrase">rescan / rebuild</span></td>
+            <td>Scans all applications on your Desktop</td>
+            <td>Scans All applications</td>
           </tr>
           <tr>
             <td><span class="cmd-phrase">stop listening</span></td>
             <td>Pauses microphone input</td>
-            <td>Say "start listening" to resume</td>
+            <td>Say "november" to resume</td>
           </tr>
           <tr>
             <td><span class="cmd-phrase">goodbye / exit</span></td>
