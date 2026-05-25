@@ -326,6 +326,12 @@ main {
     text-align: center;
     pointer-events: none;
 }
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ============================
    GLOW ORB
@@ -364,6 +370,7 @@ main {
 .avatar-ring {
     position: relative;
     z-index: 2;
+    margin-top: 2rem;
     width: clamp(120px, 13vw, 130px);
     height: clamp(120px, 13vw, 130px);
     border-radius: 50%;
