@@ -162,8 +162,6 @@ Contributions, suggestions, and feedback are welcome.
 
 3. Commit your changes 
 
-3 
-
 4. Open a pull request 
 
 ## **License** 
@@ -171,6 +169,4 @@ Contributions, suggestions, and feedback are welcome.
 This project has an MIT license.
 
 Chronos aims to make desktop interaction faster, smarter, and more natural through voice-driven automation. 
-
-4 
 
