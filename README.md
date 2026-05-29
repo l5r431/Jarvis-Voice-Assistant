@@ -118,14 +118,7 @@ Configure
 ## **Installation** 
 
 ```
-# Clone the repository
-gitclone<repository-url>
-# Navigate into the project directory
-cdchronos
-# Install dependencies
-pipinstall-rrequirements.txt
-# Run Chronos
-pythonmain.py
+Go to the latest release, download the Chronos-Setup.exe and launch it to install Chronos voice assistant, you can also download the tts-cache to improve speed.
 ```
 
 ## **Requirements** 
