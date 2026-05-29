@@ -52,7 +52,6 @@ Activate dictation mode by saying:
 
 This enables hands-free text entry into any focused application. 
 
-1 
 
 ## **Screenshot Capture** 
 
@@ -104,8 +103,6 @@ Next track
 Previous track
 ```
 
-2 
-
 ```
 Open YouTube
 What apps are open
@@ -133,7 +130,7 @@ Go to the latest release, download the Chronos-Setup.exe and launch it to instal
 
 Planned future improvements include: 
 
-- custom wake words 
+- API integration
 
 - plugin support 
 
