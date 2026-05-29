@@ -44,7 +44,6 @@ You are responsible for ensuring that your use of the Software is lawful in your
 
 Subject to these Terms, Chronos grants you a limited, non-exclusive, revocable, and non-transferable license to use the Software for personal or commercial use. 
 
-1 
 
 You may not: 
 
@@ -100,7 +99,6 @@ Chronos may process voice commands, configuration data, and user preferences to 
 
 Users are responsible for reviewing the applicable Privacy Policy regarding data handling and usage. 
 
-2 
 
 ## **8. Open Source Components** 
 
@@ -152,7 +150,6 @@ To the maximum extent permitted by law, the developers of Chronos shall not be l
 
 This limitation applies even if advised of the possibility of such damages. 
 
-3 
 
 ## **12. Updates and Modifications** 
 
@@ -176,5 +173,4 @@ For questions, feedback, or support regarding Chronos, please contact the projec
 
 By using Chronos, you acknowledge that you have read, understood, and agreed to these Terms of Service. 
 
-4 
 
